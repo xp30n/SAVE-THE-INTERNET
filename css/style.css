@@ -65,3 +65,10 @@ p {
   color: rgb(125, 190, 255);
   border: 2px rgb(125, 190, 255) solid;
 }
+
+.windows {
+  position: absolute;
+  top: -10vw;
+  left: 490px;
+  width: 140px;
+}

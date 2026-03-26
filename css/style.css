@@ -68,7 +68,14 @@ p {
 
 .windows {
   position: absolute;
-  top: -10vw;
-  left: 490px;
+  top: 60px;
+  left: 890px;
   width: 140px;
+}
+
+.vhs {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  width: 240px;
 }

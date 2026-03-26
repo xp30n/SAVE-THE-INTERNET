@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Hacker";
+  src: url("../assets/fonts/hacker.ttf") format("truetype");
+}
+
+* {
+  cursor:
+    url("../assets/images/wii-cursor.png") 10 10,
+    auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hacker", sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+p {
+  color: blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  top: 200px;
+  justify-content: center;
+}
+
+.welcome-el {
+  position: absolute;
+  font-size: x-large;
+  top: 110px;
+  left: 400px;
+}
+
+.gif-container {
+  position: absolute;
+  top: 160px;
+  left: 400px;
+}
+
+.globe-gif {
+  width: 350px;
+  height: auto;
+}
+
+.start-btn {
+  color: blue;
+  font-family: "Hacker", sans-serif;
+  font-size: 1em;
+  background-color: black;
+
+  border-radius: 10px;
+  border: 2px blue solid;
+  padding: 6px;
+
+  position: absolute;
+  top: 525px;
+  left: 540px;
+}
+
+.start-btn:hover {
+  color: rgb(125, 190, 255);
+  border: 2px rgb(125, 190, 255) solid;
+}

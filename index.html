@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+    />
+    <title>PROJ 2</title>
+  </head>
+  <body>
+    <!--TITLE TEXT-->
+    <div class="title-container" id="title">
+      <p class="welcome-el" id="welcome-el">Welcome to the world wide web.</p>
+    </div>
+
+    <!--GIF CONTAINER-->
+    <div class="gif-container" id="gif-container">
+      <img
+        class="globe-gif"
+        id="globe-gif"
+        src="assets/images/globe.gif"
+        alt="globe-anim"
+      />
+    </div>
+
+    <!--START BUTTON-->
+    <div id="start-btn">
+      <button class="start-btn">START</button>
+    </div>
+
+    <!--ANIME.JS SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+
+    <!--JS SCRIPT-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

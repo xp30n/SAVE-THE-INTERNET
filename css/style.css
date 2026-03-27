@@ -33,6 +33,8 @@ p {
   font-size: x-large;
   top: 110px;
   left: 400px;
+  opacity: 0;
+  transition: opacity 1.7s ease;
 }
 
 .gif-container {
@@ -44,6 +46,8 @@ p {
 .globe-gif {
   width: 350px;
   height: auto;
+  opacity: 0;
+  transition: opacity 1.7s ease;
 }
 
 .start-btn {
@@ -59,6 +63,8 @@ p {
   position: absolute;
   top: 525px;
   left: 540px;
+  opacity: 0;
+  transition: opacity 1.7s ease;
 }
 
 .start-btn:hover {

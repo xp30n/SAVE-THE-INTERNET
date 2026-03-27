@@ -12,76 +12,68 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   font-family: "Hacker", sans-serif;
   background-color: black;
   overflow: hidden;
-}
 
-p {
-  color: blue;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.title-container {
-  top: 200px;
-  justify-content: center;
+.landing-container {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
 }
 
+p {
+  color: blue;
+  margin: 0;
+}
+
+
 .welcome-el {
-  position: absolute;
-  font-size: x-large;
-  top: 110px;
-  left: 400px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 1rem;
   opacity: 0;
-  transition: opacity 1.7s ease;
+  transition: opacity 2.0s ease;
 }
 
 .gif-container {
-  position: absolute;
-  top: 160px;
-  left: 400px;
+  margin-bottom: 2rem;
 }
 
 .globe-gif {
-  width: 350px;
+  display: block;
+  width: min(35vw, 350px);
+  max-width: 350px;
   height: auto;
+  margin: 0 auto;
   opacity: 0;
-  transition: opacity 1.7s ease;
+  transition: opacity 2.0s ease;
+}
+
+.button-container {
+  text-align: center;
 }
 
 .start-btn {
   color: blue;
   font-family: "Hacker", sans-serif;
-  font-size: 1em;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   background-color: black;
 
   border-radius: 10px;
   border: 2px blue solid;
-  padding: 6px;
+  padding: 0.5rem 1rem;
 
-  position: absolute;
-  top: 525px;
-  left: 540px;
   opacity: 0;
-  transition: opacity 1.7s ease;
+  transition: opacity 2.0s ease;
 }
 
 .start-btn:hover {
   color: rgb(125, 190, 255);
   border: 2px rgb(125, 190, 255) solid;
-}
-
-.windows {
-  position: absolute;
-  top: 60px;
-  left: 890px;
-  width: 140px;
-}
-
-.vhs {
-  position: absolute;
-  top: 10px;
-  left: 90px;
-  width: 240px;
 }

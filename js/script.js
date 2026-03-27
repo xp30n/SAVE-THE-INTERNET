@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
   const startEl = document.getElementById("start-btn");
   const startBtn = document.getElementById("start-btn");
 
-  const welcomeText = "WELCOME TO THE WORLD WIDE WEB";
+  const welcomeText = "WELCOME TO THE WORLD WIDE WEB.";
   const speed = 150;
   let i = 0;
 
@@ -37,5 +37,4 @@ window.addEventListener("load", function () {
   this.setTimeout(function () {
     typeWriter();
   }, 4000);
-
 });

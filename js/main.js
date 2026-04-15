@@ -7,7 +7,7 @@ function createWindow() {
         resizable: false,
         maximizable: false,
         fullscreenable: true,
-        frame: false,
+        frame: true,
         // transparent: true,
         backgroundColor: '#00000000',
         webPreferences: {

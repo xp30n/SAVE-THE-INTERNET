@@ -31,11 +31,11 @@ window.addEventListener("load", function () {
     welcomeEl.style.opacity = 1;
     globeEl.style.opacity = 1;
     startEl.style.opacity = 1;
-  }, 2000);
+  }, 1000);
 
   // Wait 4 seconds after the page loads to fade in the welcome text
   this.setTimeout(function () {
     typeWriter();
-  }, 4000);
+  }, 3000);
 
 });

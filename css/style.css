@@ -28,9 +28,8 @@ p {
   margin: 0;
 }
 
-
 .welcome-el {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.7rem, 2vw, 2rem);
   margin-bottom: 1rem;
   opacity: 0;
   transition: opacity 2.0s ease;
@@ -42,8 +41,8 @@ p {
 
 .globe-gif {
   display: block;
-  width: min(35vw, 350px);
-  max-width: 350px;
+  width: min(35vw, 450px);
+  max-width: 450px;
   height: auto;
   margin: 0 auto;
   opacity: 0;
@@ -57,7 +56,7 @@ p {
 .start-btn {
   color: blue;
   font-family: "Hacker", sans-serif;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: clamp(1.5rem, 1.5vw, 1rem);
   background-color: black;
 
   border-radius: 10px;

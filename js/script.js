@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
   // Function to make the button clickable
   startBtn.addEventListener("click", function () {
     console.log("Button is clicked")
-    window.location.href = "html/Surveillance.html";
+    window.location.href = "html/Ads.html";
   });
 
   // Wait 2 seconds after the page loads to fade in the elements

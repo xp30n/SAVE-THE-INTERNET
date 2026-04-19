@@ -3,11 +3,6 @@
   src: url("../assets/fonts/hacker.ttf") format("truetype");
 }
 
-* {
-  cursor:
-    url("../assets/images/wii-cursor.png") 10 10,
-    auto;
-}
 
 body {
   margin: 0;

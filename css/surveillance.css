@@ -1,35 +1,28 @@
 @font-face {
-    font-family: "Hacker";
-    src: url("../assets/fonts/hacker.ttf") format("truetype");
-  }
-  
-  * {
-    cursor:
-      url("../assets/images/wii-cursor.png") 10 10,
-      auto;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: "Hacker", sans-serif;
-    background-color: black;
-    overflow: hidden;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .landing-container {
-    width: 90%;
-    max-width: 700px;
-    text-align: center;
-  }
-  
-  p {
-    color: blue;
-    margin: 0;
-  }
-  
+  font-family: "Hacker";
+  src: url("../assets/fonts/hacker.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Hacker", sans-serif;
+  background-color: black;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-container {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+p {
+  color: blue;
+  margin: 0;
+}

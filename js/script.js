@@ -37,4 +37,5 @@ window.addEventListener("load", function () {
   this.setTimeout(function () {
     typeWriter();
   }, 4000);
+
 });

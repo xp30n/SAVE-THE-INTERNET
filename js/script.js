@@ -35,5 +35,5 @@ window.addEventListener("load", function () {
   // Wait 4 seconds after the page loads to fade in the welcome text
   this.setTimeout(function () {
     typeWriter();
-  }, 3000);
+  }, 2000);
 });

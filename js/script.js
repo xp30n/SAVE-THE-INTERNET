@@ -22,8 +22,7 @@ window.addEventListener("load", function () {
 
   // Function to make the button clickable
   startBtn.addEventListener("click", function () {
-    console.log("Button is clicked")
-    window.location.href = "html/Ads.html";
+    console.log("Button is clicked");
   });
 
   // Wait 2 seconds after the page loads to fade in the elements
@@ -37,5 +36,4 @@ window.addEventListener("load", function () {
   this.setTimeout(function () {
     typeWriter();
   }, 3000);
-
 });

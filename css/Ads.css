@@ -44,6 +44,7 @@ body {
   color: blue;
   font-family: "Hacker";
   font-size: clamp(1.7rem, 1.5vw, 1rem);
+  transition: opacity 0.5s ease-out;
 }
 
 .start-btn:hover {

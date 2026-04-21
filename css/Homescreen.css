@@ -87,6 +87,21 @@ body {
   color: white;
 }
 
+.end {
+  position: fixed;
+  left: 66px;
+
+  font-size: 17px;
+  color: #ccc;
+}
+
+.end:hover {
+  cursor: pointer;
+  transition: color 0.2s;
+  color: white;
+  -webkit-app-region: no-drag;
+}
+
 /*==================================================
 =                      ICONS                       =
 ===================================================*/

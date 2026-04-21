@@ -168,3 +168,8 @@ p {
   color: rgb(43, 0, 255);
   -webkit-app-region: no-drag;
 }
+
+.popup-header {
+  color: blue;
+  -webkit-app-region: no-drag;
+}

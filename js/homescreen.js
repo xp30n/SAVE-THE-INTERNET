@@ -75,11 +75,11 @@ async function createPopup() {
 
   setTimeout(() => {
     popup.classList.add("fade-out");
-  }, 10000);
+  }, 15000);
 
   setTimeout(() => {
     popup.remove();
-  }, 10500);
+  }, 15500);
 }
 
 // Secret escape
@@ -88,3 +88,14 @@ window.addEventListener("keydown", (event) => {
     window.location.href = "../index.html";
   }
 });
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::
+::                MONETIZATION                ::
+::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+let computerBtn = document.getElementById("pc");
+
+computerBtn.addEventListener("click", function() {
+    console.log("CLICKED")
+})

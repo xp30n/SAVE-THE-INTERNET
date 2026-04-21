@@ -170,7 +170,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 
   font-family: sans-serif;
-  cursor: pointer;
   animation: shake 0.3s infinite;
   -webkit-app-region: no-drag;
 
@@ -193,6 +192,7 @@ body {
 }
 
 .popup-header {
+  cursor: pointer;
   color: blue;
   -webkit-app-region: no-drag;
 }

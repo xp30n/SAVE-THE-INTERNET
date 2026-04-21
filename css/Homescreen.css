@@ -20,7 +20,7 @@ body {
   -webkit-app-region: drag;
 }
 
-.landing-container {
+.main-container {
   width: 90%;
   max-width: 700px;
   text-align: center;
@@ -46,6 +46,7 @@ p {
   align-items: center;
   padding: 0 10px;
   justify-content: space-between;
+  z-index: 6;
   -webkit-app-region: no-drag;
 }
 
@@ -84,4 +85,65 @@ p {
 
   font-size: clamp(1.7rem, 2vw, 2rem);
   color: white;
+}
+
+.pc {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 70px;
+  display: flex;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.explorer {
+  position: fixed;
+  top: 115px;
+  left: 15px;
+  width: 70px;
+  display: flex;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.music {
+  position: fixed;
+  top: 215px;
+  left: 15px;
+  width: 60px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(2px, -2px); }
+  50% { transform: translate(-2px, 2px); }
+  75% { transform: translate(2px, 2px); }
+  100% { transform: translate(0); }
+}
+
+.popup {
+  position: absolute;
+
+  width: 340px;
+  height: 300px;
+  padding: 15px;
+
+  background: rgb(28, 0, 190);
+  border: 4px solid rgb(0, 98, 196);
+  border-radius: 8px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black;
+  font-family: sans-serif;
+  text-align: center;
+  cursor: pointer;
+  animation: shake 0.3s infinite;
+  -webkit-app-region: no-drag;
+
+  z-index: 5; 
 }

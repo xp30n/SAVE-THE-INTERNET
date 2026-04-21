@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Hacker";
+  src: url("../assets/fonts/hacker.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Hacker", sans-serif;
+
+  background-image: url(/assets/images/HarmonyOS-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-container {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}

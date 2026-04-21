@@ -1,3 +1,5 @@
+import { createDraggable } from "https://esm.sh/animejs";
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::
 ::                  TASKBAR                   ::
@@ -28,9 +30,9 @@ loginBtn.addEventListener("click", function () {
 
 const endBtn = document.getElementById("end");
 
-endBtn.addEventListener("click", function() {
-    console.log("ENDING THIS SESSION");
-})
+endBtn.addEventListener("click", function () {
+  console.log("ENDING THIS SESSION");
+});
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -94,8 +96,35 @@ window.addEventListener("keydown", (event) => {
 ::                MONETIZATION                ::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 */
-let computerBtn = document.getElementById("pc");
+let explorerBtn = document.getElementById("explorer");
 
-computerBtn.addEventListener("click", function() {
-    console.log("CLICKED")
-})
+explorerBtn.addEventListener("click", createWeb);
+
+function createWeb() {
+  const webBrowser = document.createElement("div");
+  webBrowser.classList.add("web-browser");
+
+  const titleBar = document.createElement("div");
+  titleBar.classList.add("title-bar");
+
+  const content = document.createElement("div");
+  content.classList.add("content");
+
+  content.innerHTML = `
+    <button class="search-btn">Enter</button>
+    <input class="search" placeholder="Search Anything" />
+  `;
+
+  webBrowser.appendChild(titleBar);
+  webBrowser.appendChild(content);
+
+  document.body.appendChild(webBrowser);
+
+  explorerBtn.addEventListener("click", function() {
+    webBrowser.remove();
+  })
+
+  createDraggable(webBrowser, {
+    trigger: titleBar,
+  });
+}

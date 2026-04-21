@@ -201,4 +201,64 @@ body {
 =                   MONETIZATION                   =
 ===================================================*/
 
+.web-browser {
+  width: 700px;
+  height: 450px;
 
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  transform: translate(-50%, -50%);
+
+  background-image: url("../assets/images/HarmonyWeb.png");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  -webkit-app-region: no-drag;
+}
+
+.web-browser,
+.web-browser * {
+  -webkit-app-region: no-drag;
+}
+
+.title-bar {
+  height: 20px;
+  background: #5badff;
+  cursor: grab;
+  -webkit-app-region: no-drag;
+}
+
+.title-bar:active {
+  cursor: grabbing;
+  -webkit-app-region: no-drag;
+}
+
+.search {
+  font-family: "Hacker";
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px;
+
+  position: absolute;
+  top: 45%;
+  left: 29%;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border: transparent;
+  color: midnightblue;
+}
+
+input::placeholder {
+  color: rgb(138, 208, 231);
+}
+
+.search:focus {
+  outline: none;
+}

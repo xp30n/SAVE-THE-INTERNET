@@ -16,24 +16,29 @@ body {
   overflow: hidden;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .landing-container {
   width: 90%;
   max-width: 700px;
   text-align: center;
+  margin: auto;
 }
 
 .taskbar-container {
-    position: fixed;
-    bottom: 5vh;
-    left: 15vw;
-    width: 2vw;
-    max-width: 50px;
+  width: clamp(30px, 2vw, 50px);
+  margin-top: auto;
+  margin-bottom: 3vh;
+  align-self: flex-start;
+  margin-left: 15vw;
+}
+
+.taskbar {
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 p {
-    color: white;
+  color: white;
 }

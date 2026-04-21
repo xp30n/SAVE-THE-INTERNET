@@ -27,14 +27,14 @@ window.addEventListener("load", function () {
   });
 
   // Wait 2 seconds after the page loads to fade in the elements
-  this.setTimeout(function () {
+  setTimeout(function () {
     welcomeEl.style.opacity = 1;
     globeEl.style.opacity = 1;
     startEl.style.opacity = 1;
   }, 1000);
 
   // Wait 4 seconds after the page loads to fade in the welcome text
-  this.setTimeout(function () {
+  setTimeout(function () {
     typeWriter();
   }, 2000);
 });

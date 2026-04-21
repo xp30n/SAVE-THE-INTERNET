@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/HarmonyOS.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/images/HarmonyOS.ico" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
@@ -12,28 +12,27 @@
     <title>SAVE THE INTERNET</title>
   </head>
   <body>
-    <div class="landing-container">
+      <div class="landing-container">
+        <!--TITLE CONTAINER-->
+        <div class="title-container" id="title">
+          <p class="welcome-el" id="welcome-el"></p>
+        </div>
 
-      <!--TITLE CONTAINER-->
-      <div class="title-container" id="title">
-        <p class="welcome-el" id="welcome-el"></p>
-      </div>
+        <!--GLOBE GIF-->
+        <div class="gif-container" id="gif container">
+          <img
+            class="globe-gif"
+            id="globe-gif"
+            src="assets/images/globe.gif"
+            alt="globe-anim"
+          />
+        </div>
 
-      <!--GLOBE GIF-->
-      <div class="gif-container" id="gif container">
-        <img
-        class="globe-gif"
-        id="globe-gif"
-        src="assets/images/globe.gif"
-        alt="globe-anim"
-        />
+        <!--START BUTTON-->
+        <div class="button-container">
+          <button class="start-btn" id="start-btn">GET STARTED</button>
+        </div>
       </div>
-
-      <!--START BUTTON-->
-      <div class="button-container">
-        <button class="start-btn" id="start-btn">GET STARTED</button>
-      </div>
-    </div>
 
     <!--JS SCRIPT-->
     <script src="js/script.js"></script>

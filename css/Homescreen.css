@@ -25,3 +25,15 @@ body {
   max-width: 700px;
   text-align: center;
 }
+
+.taskbar-container {
+    position: fixed;
+    bottom: 5vh;
+    left: 15vw;
+    width: 2vw;
+    max-width: 50px;
+}
+
+p {
+    color: white;
+}

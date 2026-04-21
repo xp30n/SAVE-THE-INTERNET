@@ -10,7 +10,7 @@ loginBtn.addEventListener("click", function () {
 
   const newDiv = document.createElement("div");
 
-  newDiv.textContent = "You can't return to login!";
+  newDiv.textContent = "HarmonyOS ERROR. Try again later.";
   newDiv.className = "login-return";
 
   document.body.appendChild(newDiv);
@@ -25,6 +25,12 @@ loginBtn.addEventListener("click", function () {
     newDiv.remove();
   }, 2500);
 });
+
+const endBtn = document.getElementById("end");
+
+endBtn.addEventListener("click", function() {
+    console.log("ENDING THIS SESSION");
+})
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::

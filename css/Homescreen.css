@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   font-family: "Hacker", sans-serif;
 
-  background-image: url(/assets/images/HarmonyOS-bg.png);
+  background-image: url(../assets/images/HarmonyOS-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

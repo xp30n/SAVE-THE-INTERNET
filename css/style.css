@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-app-region: drag;
 }
 
 .landing-container {
@@ -50,6 +51,7 @@ p {
 
 .button-container {
   text-align: center;
+  -webkit-app-region: no-drag;
 }
 
 .start-btn {
@@ -64,9 +66,11 @@ p {
 
   opacity: 0;
   transition: opacity 2.0s ease;
+  -webkit-app-region: no-drag;
 }
 
 .start-btn:hover {
   color: rgb(125, 190, 255);
   border: 2px rgb(125, 190, 255) solid;
+  -webkit-app-region: no-drag;
 }

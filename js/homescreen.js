@@ -28,8 +28,7 @@ musicPlayer.addEventListener("click", createPopup);
 async function createPopup() {
   const popup = document.createElement("div");
   popup.classList.add("popup");
-  popup.innerHTML = `
-    <div class="popup-body">CLICK TO CLOSE</div>`;
+  popup.innerHTML = `<div class="popup-body">CLICK TO CLOSE</div>`;
 
   // random image from Nekos Api
   const res = await fetch("https://nekos.best/api/v2/neko");
@@ -62,6 +61,7 @@ async function createPopup() {
   }, 10500);
 }
 
+// Secret escape
 window.addEventListener("keydown", (event) => {
   if (event.key === "Z" || event.key === "z") {
     window.location.href = "../index.html";

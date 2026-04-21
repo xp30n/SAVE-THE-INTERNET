@@ -29,7 +29,7 @@ async function createPopup() {
   const popup = document.createElement("div");
   popup.classList.add("popup");
   popup.innerHTML = `
-    <div class="popup-body">CLICK HERE!!! 🔥</div>`;
+    <div class="popup-body">CLICK TO CLOSE</div>`;
 
   // random image from Nekos Api
   const res = await fetch("https://nekos.best/api/v2/neko");
@@ -55,11 +55,11 @@ async function createPopup() {
 
   setTimeout(() => {
     popup.classList.add("fade-out");
-  }, 5000);
+  }, 10000);
 
   setTimeout(() => {
     popup.remove();
-  }, 5500);
+  }, 10500);
 }
 
 window.addEventListener("keydown", (event) => {

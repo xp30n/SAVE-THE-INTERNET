@@ -1,3 +1,8 @@
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::
+::                  TASKBAR                   ::
+::::::::::::::::::::::::::::::::::::::::::::::::
+*/
 const loginBtn = document.getElementById("footer-right");
 
 loginBtn.addEventListener("click", function () {
@@ -21,6 +26,12 @@ loginBtn.addEventListener("click", function () {
   }, 2500);
 });
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::
+::                  POP UPS                   ::
+::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+
 const musicPlayer = document.getElementById("music");
 
 musicPlayer.addEventListener("click", createPopup);
@@ -43,9 +54,10 @@ async function createPopup() {
   popup.style.backgroundSize = "cover";
   popup.style.backgroundPosition = "center";
 
-  const popupWidth = 400;
-  const popupHeight = 300;
+  const popupWidth = 300;
+  const popupHeight = 250;
 
+  // Prevents the pop up from appearing off-screen
   popup.style.top = Math.random() * (window.innerHeight - popupHeight) + "px";
   popup.style.left = Math.random() * (window.innerWidth - popupHeight) + "px";
 

@@ -40,7 +40,7 @@ p {
   box-sizing: border-box;
 
   background: #22066e;
-  border-top: 1px solid #004ff9;
+  border-top: 4px solid #1344ca;
 
   display: flex;
   align-items: center;
@@ -70,4 +70,18 @@ p {
 .footer-right:hover {
   color: white;
   -webkit-app-region: no-drag;
+}
+
+.login-return {
+  position: fixed;   
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(1.7rem, 2vw, 2rem);
+  color: white;
 }

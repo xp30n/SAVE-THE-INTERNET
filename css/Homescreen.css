@@ -30,3 +30,24 @@ body {
 p {
   color: white;
 }
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  background: #22066e;
+  border-top: 1px solid #004ff9;
+
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.footer-left {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+}

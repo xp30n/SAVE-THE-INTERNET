@@ -116,6 +116,15 @@ p {
   -webkit-app-region: no-drag;
 }
 
+.trash {
+  position: fixed;
+  top: 320px;
+  left: 15px;
+  width: 70px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
 @keyframes shake {
   0% { transform: translate(0); }
   25% { transform: translate(2px, -2px); }
@@ -137,8 +146,8 @@ p {
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 
-  color: rgb(255, 255, 255);
-  -webkit-text-stroke: 1px black;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   font-family: sans-serif;
   text-align: center;
   cursor: pointer;

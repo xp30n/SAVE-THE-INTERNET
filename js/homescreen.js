@@ -111,7 +111,7 @@ function createWeb() {
   content.classList.add("content");
 
   content.innerHTML = `
-    <button class="search-btn">Enter</button>
+    <p class ="title-page">Harmony Web</p>
     <input class="search" placeholder="Search Anything" />
   `;
 

@@ -74,7 +74,7 @@ body {
 }
 
 .login-return {
-  position: fixed;   
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -149,11 +149,21 @@ body {
 ===================================================*/
 
 @keyframes shake {
-  0% { transform: translate(0); }
-  25% { transform: translate(2px, -2px); }
-  50% { transform: translate(-2px, 2px); }
-  75% { transform: translate(2px, 2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .popup {
@@ -167,13 +177,13 @@ body {
   border: 4px solid rgb(0, 98, 196);
   border-radius: 8px;
 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
   font-family: sans-serif;
   animation: shake 0.3s infinite;
   -webkit-app-region: no-drag;
 
-  z-index: 5; 
+  z-index: 5;
 }
 
 .popup-body {
@@ -241,18 +251,18 @@ body {
   font-family: "Hacker";
   border-radius: 30px;
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
 
   position: absolute;
   top: 45%;
-  left: 29%;
+  left: 27%;
   width: 40%;
   justify-content: center;
   align-items: center;
   text-align: center;
 
   border: transparent;
-  color: midnightblue;
+  color: rgb(138, 208, 231);
 }
 
 input::placeholder {
@@ -261,4 +271,14 @@ input::placeholder {
 
 .search:focus {
   outline: none;
+}
+
+.title-page {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 60px;
+  color: rgb(17, 71, 152);
+  margin-top: 90px;
 }

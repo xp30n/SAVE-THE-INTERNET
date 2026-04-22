@@ -1,5 +1,4 @@
 import { createDraggable } from "https://esm.sh/animejs";
-
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::
 ::                  TASKBAR                   ::
@@ -40,9 +39,9 @@ endBtn.addEventListener("click", function () {
 ::::::::::::::::::::::::::::::::::::::::::::::::
 */
 
-const musicPlayer = document.getElementById("music");
+const littleDude = document.getElementById("music");
 
-musicPlayer.addEventListener("click", createPopup);
+littleDude.addEventListener("click", createPopup);
 
 async function createPopup() {
   const popup = document.createElement("div");
@@ -65,7 +64,7 @@ async function createPopup() {
   const popupWidth = 300;
   const popupHeight = 250;
 
-  // Prevents the pop up from appearing off-screen
+  // Prevents the pop up from appearing off-screen but gives it random placement
   popup.style.top = Math.random() * (window.innerHeight - popupHeight) + "px";
   popup.style.left = Math.random() * (window.innerWidth - popupHeight) + "px";
 
@@ -100,6 +99,28 @@ let explorerBtn = document.getElementById("explorer");
 
 explorerBtn.addEventListener("click", createWeb);
 
+// Create error message when using the web
+function errorMessage() {
+  const errorBox = document.createElement("div");
+  errorBox.classList.add("error-box");
+
+  const errTitleBar = document.createElement("div");
+  errTitleBar.classList.add("err-title-bar");
+
+  errorBox.innerHTML = `
+    <p class="error-text">SYSTEM ERROR</p>
+    <p class="error-sub">To search, please pay 2.99$ to subscribe!</p>
+    <button class="ok-btn">Take my money</button>
+    `;
+
+  errorBox.appendChild(errTitleBar);
+  document.body.appendChild(errorBox);
+
+  createDraggable(webBrowser, {
+    trigger: errTitleBar,
+  });
+}
+
 function createWeb() {
   const webBrowser = document.createElement("div");
   webBrowser.classList.add("web-browser");
@@ -120,15 +141,15 @@ function createWeb() {
 
   document.body.appendChild(webBrowser);
 
-  explorerBtn.addEventListener("click", function() {
+  explorerBtn.addEventListener("click", function () {
     webBrowser.remove();
-  })
+  });
 
   window.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        console.log("PAY 2.99$ TO SEARCH");
+      console.log("PAY 2.99$ TO SEARCH");
     }
-  })
+  });
 
   createDraggable(webBrowser, {
     trigger: titleBar,

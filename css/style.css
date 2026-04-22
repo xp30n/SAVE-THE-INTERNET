@@ -90,6 +90,7 @@ p {
   scroll-behavior: smooth;
   anchor-name: --carousel;
   scroll-snap-type: x mandatory;
+  -webkit-app-region: no-drag;
 }
 
 .carousel::-webkit-scrollbar {
@@ -116,6 +117,7 @@ p {
   position-anchor: --carousel;
   position-area: right center;
   translate: -50%;
+  -webkit-app-region: no-drag;
 }
 
 .carousel::scroll-button(right):hover,
@@ -127,6 +129,7 @@ p {
   content: "◀";
   position-area: left center;
   translate: 50%;
+  -webkit-app-region: no-drag;
 }
 
 .carousel::scroll-button(right):disabled,
@@ -160,8 +163,10 @@ p {
   cursor: pointer;
   z-index: 20;
   /* above canvas + video */
+  -webkit-app-region: no-drag;
 }
 
 #galleryBtn:hover {
   background-color: #424242;
+  -webkit-app-region: no-drag;
 }

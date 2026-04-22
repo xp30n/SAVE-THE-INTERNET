@@ -69,6 +69,31 @@
         color: rgb(132, 206, 252);
         border: 2px solid rgb(132, 206, 252);
       }
+
+      #goBackBtn {
+        position: fixed;
+        top: 930px;
+        right: 10px;
+
+        padding: 10px 16px;
+        font-size: 23px;
+        font-family: "Hacker";
+
+        background-color: transparent;
+        border: 2px solid rgb(34, 8, 229);
+        color: rgb(34, 8, 229);
+        border-radius: 8px;
+
+        cursor: pointer;
+        z-index: 20;
+        /* above canvas + video */
+      }
+
+      #goBackBtn:hover {
+        background-color: #131313;
+        color: rgb(50, 65, 239);
+        border: 2px solid rgb(44, 57, 243);
+      }
     </style>
 
     <script type="importmap">
@@ -88,5 +113,6 @@
     <canvas id="three-ex"></canvas>
     <video id="video" autoplay muted></video>
     <button id="inventoryBtn">Inventory</button>
+    <button id="goBackBtn">Back to Homepage</button>
   </body>
 </html>

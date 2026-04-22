@@ -383,3 +383,9 @@ function animate(timer) {
 document.getElementById('inventoryBtn').addEventListener('click', () => {
     window.location.href = '../html/inventory.html';
 });
+
+// go back to homescreen
+const homepage = document.getElementById("goBackBtn");
+homepage.addEventListener("click", function() {
+    window.location.href = "../html/Homescreen.html";
+})

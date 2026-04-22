@@ -196,4 +196,4 @@ const trashBtn = document.getElementById("trash");
 trashBtn.addEventListener("click", function() {
   // console.log("button is working");
   window.location.href = "../html/Endscreen.html";
-})
+});

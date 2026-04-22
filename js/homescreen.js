@@ -107,19 +107,41 @@ function errorMessage() {
   const errTitleBar = document.createElement("div");
   errTitleBar.classList.add("err-title-bar");
 
-  errorBox.innerHTML = `
-    <p class="error-text">SYSTEM ERROR</p>
-    <p class="error-sub">To search, please pay 2.99$ to subscribe!</p>
+  const errContent = document.createElement("div");
+  errContent.classList.add("err-content");
+
+  errTitleBar.innerHTML = `<p class="error-text">SYSTEM MESSAGE</p>`;
+
+  errContent.innerHTML = `
+    <p class="error-sub">Access Denied. A subscription fee of $2.99 is required to proceed</p>
     <button class="ok-btn">Take my money</button>
     `;
 
   errorBox.appendChild(errTitleBar);
+  errorBox.appendChild(errContent);
   document.body.appendChild(errorBox);
 
-  createDraggable(webBrowser, {
-    trigger: errTitleBar,
+  removeError();
+
+  // Making it so that the window pops up in the middle of the screen and remains draggable
+  requestAnimationFrame(() => {
+    const errRect = errorBox.getBoundingClientRect();
+    errorBox.style.left = (window.innerWidth / 2 - errRect.width / 2) + "px";
+    errorBox.style.top = (window.innerHeight / 2 - errRect.height / 2) + "px";
+
+    createDraggable(errorBox, {
+        trigger: errTitleBar,
+      });
   });
-}
+
+  function removeError() {
+    const moneyBtn = document.querySelector(".ok-btn");
+
+    moneyBtn.addEventListener("click", (event) => {
+        errorBox.remove();
+    });
+  };
+};
 
 function createWeb() {
   const webBrowser = document.createElement("div");
@@ -141,17 +163,24 @@ function createWeb() {
 
   document.body.appendChild(webBrowser);
 
+  requestAnimationFrame(() => {
+    const rect = webBrowser.getBoundingClientRect();
+    webBrowser.style.left = (window.innerWidth / 2 - rect.width / 2) + "px";
+    webBrowser.style.top = (window.innerHeight / 2 - rect.height / 2) + "px";
+
+    createDraggable(webBrowser, {
+      trigger: titleBar,
+    });
+  });
+
   explorerBtn.addEventListener("click", function () {
     webBrowser.remove();
   });
 
   window.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      console.log("PAY 2.99$ TO SEARCH");
+      //   console.log("PAY 2.99$ TO SEARCH");
+      errorMessage();
     }
-  });
-
-  createDraggable(webBrowser, {
-    trigger: titleBar,
   });
 }

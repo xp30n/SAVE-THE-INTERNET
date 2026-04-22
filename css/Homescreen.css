@@ -216,8 +216,8 @@ body {
   height: 450px;
 
   position: fixed;
-  top: 100px;
-  left: 100px;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 
   background-image: url("../assets/images/HarmonyWeb.png");
@@ -266,12 +266,12 @@ body {
 }
 
 input::placeholder {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(177, 177, 177);
 }
 
 .search:focus {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   outline: none;
 }
 
@@ -280,8 +280,93 @@ input::placeholder {
   align-items: center;
   text-align: center;
 
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 60px;
   color: rgb(12, 96, 170);
   margin-top: 90px;
+}
+
+.error-box {
+  position: absolute;
+  top: 148px;
+  left: 83px;
+  z-index: 1;
+
+  width: 420px;
+  min-height: 230px;
+
+  background: rgba(215, 231, 252, 0.72);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+  border-radius: 20px;
+  border: 2px solid rgb(122, 187, 244);
+  box-shadow:
+    0 8px 32px rgba(100, 150, 210, 0.18),
+    0 2px 8px rgba(100, 150, 210, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  -webkit-app-region: no-drag;
+}
+
+.err-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+
+  background: rgb(122, 187, 244);
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+
+  cursor: grab;
+  overflow: hidden;
+  -webkit-app-region: no-drag;
+}
+
+.err-title-bar:active {
+  cursor: grabbing;
+  -webkit-app-region: no-drag;
+}
+
+.error-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(12, 96, 170);
+  font-size: 20px;
+}
+
+.error-sub {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color: rgb(29, 2, 118);
+  margin-top: 35px;
+}
+
+.ok-btn {
+  position: fixed;
+  top: 185px;
+  left: 150px;
+  padding: 7px;
+
+  border-top: white;
+  border-left: white;
+  border-bottom: 2px solid #22066e;
+  border-right: 2px solid #22066e;
+  border-radius: 3px;
+
+  background: rgb(104, 193, 252);
+  color: rgb(29, 2, 118);
+}
+
+.ok-btn:hover {
+  background: rgb(255, 185, 243);
+  color: rgb(22, 11, 59);
+  cursor: pointer;
 }

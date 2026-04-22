@@ -237,7 +237,7 @@ body {
 
 .title-bar {
   height: 20px;
-  background: #5badff;
+  background: transparent;
   cursor: grab;
   -webkit-app-region: no-drag;
 }
@@ -262,14 +262,16 @@ body {
   text-align: center;
 
   border: transparent;
-  color: rgb(138, 208, 231);
+  color: rgb(27, 50, 226);
 }
 
 input::placeholder {
-  color: rgb(138, 208, 231);
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(177, 177, 177);
 }
 
 .search:focus {
+  font-family:Arial, Helvetica, sans-serif;
   outline: none;
 }
 
@@ -278,7 +280,8 @@ input::placeholder {
   align-items: center;
   text-align: center;
 
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 60px;
-  color: rgb(17, 71, 152);
+  color: rgb(12, 96, 170);
   margin-top: 90px;
 }

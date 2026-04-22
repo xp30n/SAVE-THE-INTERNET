@@ -85,11 +85,11 @@ async function createPopup() {
 }
 
 // Secret escape
-window.addEventListener("keydown", (event) => {
-  if (event.key === "Z" || event.key === "z") {
-    window.location.href = "../index.html";
-  }
-});
+// window.addEventListener("keydown", (event) => {
+//   if (event.key === "Z" || event.key === "z") {
+//     window.location.href = "../index.html";
+//   }
+// });
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -122,6 +122,12 @@ function createWeb() {
 
   explorerBtn.addEventListener("click", function() {
     webBrowser.remove();
+  })
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        console.log("PAY 2.99$ TO SEARCH");
+    }
   })
 
   createDraggable(webBrowser, {

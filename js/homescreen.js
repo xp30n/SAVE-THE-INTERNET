@@ -27,11 +27,11 @@ loginBtn.addEventListener("click", function () {
   }, 2500);
 });
 
-const endBtn = document.getElementById("end");
+// const endBtn = document.getElementById("end");
 
-endBtn.addEventListener("click", function () {
-  console.log("ENDING THIS SESSION");
-});
+// endBtn.addEventListener("click", function () {
+//   console.log("ENDING THIS SESSION");
+// });
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -184,3 +184,16 @@ function createWeb() {
     }
   });
 }
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::
+::                 END SCREEN                 ::
+::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+
+const trashBtn = document.getElementById("trash");
+
+trashBtn.addEventListener("click", function() {
+  // console.log("button is working");
+  window.location.href = "../html/Endscreen.html";
+})

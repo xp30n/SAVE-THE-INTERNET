@@ -166,7 +166,7 @@ init();
 async function loadModels() {
     const gltLoader = new GLTFLoader();
     try {
-        const gltfEye = await gltLoader.loadAsync('3Dmodels/mecanic_eye/scene.gltf');
+        const gltfEye = await gltLoader.loadAsync('../3Dmodels/mecanic_eye/scene.gltf');
         const eyeModel = gltfEye.scene.children[0];
         // console.log(eyeModel)
         return eyeModel;
@@ -241,10 +241,10 @@ let emotionLock = false;
 let currentEmotion = null;
 let currentProbability = 0;
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri('./models'),
-    faceapi.nets.faceLandmark68Net.loadFromUri('./models'),
-    faceapi.nets.faceRecognitionNet.loadFromUri('./models'),
-    faceapi.nets.faceExpressionNet.loadFromUri('./models')
+    faceapi.nets.tinyFaceDetector.loadFromUri('../models'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('../models'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('../models'),
+    faceapi.nets.faceExpressionNet.loadFromUri('../models')
 ]).then(startVideo)
 
 function startVideo() {
@@ -381,5 +381,5 @@ function animate(timer) {
 
 // Click Inventory button
 document.getElementById('inventoryBtn').addEventListener('click', () => {
-    window.location.href = 'inventory.html';
+    window.location.href = '../html/inventory.html';
 });

@@ -130,15 +130,15 @@ function errorMessage() {
     errorBox.style.top = (window.innerHeight / 2 - errRect.height / 2) + "px";
 
     createDraggable(errorBox, {
-        trigger: errTitleBar,
-      });
+      trigger: errTitleBar,
+    });
   });
 
   function removeError() {
     const moneyBtn = document.querySelector(".ok-btn");
 
     moneyBtn.addEventListener("click", (event) => {
-        errorBox.remove();
+      errorBox.remove();
     });
   };
 };
@@ -193,7 +193,18 @@ function createWeb() {
 
 const trashBtn = document.getElementById("trash");
 
-trashBtn.addEventListener("click", function() {
+trashBtn.addEventListener("click", function () {
   // console.log("button is working");
   window.location.href = "../html/Endscreen.html";
+});
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::
+::                 GALLERY SCREEN             ::
+::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+const pcBtn = document.getElementById("pc");
+pcBtn.addEventListener("click", function () {
+  // console.log("button is working");
+  window.location.href = "../html/gallery.html";
 });

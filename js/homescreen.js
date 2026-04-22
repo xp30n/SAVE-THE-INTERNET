@@ -179,8 +179,8 @@ function createWeb() {
 
   window.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      //   console.log("PAY 2.99$ TO SEARCH");
       errorMessage();
+      event.target.value = "";
     }
   });
 }

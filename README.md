@@ -2,6 +2,47 @@
 
 Final Project for CART 263
 
-> THE NETWORK IS NOT READY FOR YOU YET
+## Overview
+SAVE THE INTERNET is an interactive web-based experience exploring the degradation of the internet over time since its creation.
 
-![Cyberpunk Aesthetic](https://github.com/user-attachments/assets/0c9baf01-ff9e-4a2f-a185-3eeda5b01e56)
+The project simulates a desktop where you're gradually overwhelmed with ads and pop-ups, forced subscriptions and misleading interfaces. 
+
+<img width="784" height="460" alt="image" src="https://github.com/user-attachments/assets/0c667d96-48b0-4b5f-a9b3-07210952ee1b" />
+
+## Features
+#### Fake Pop-up Ads
+- Randomly generated pop-ups appear across the screen
+- Trying to close them generates more
+- Pop-ups include randomly sources images (NekosAPI)
+
+#### Forced Monetization
+- Forced paywall when trying to search on the web
+
+#### Control
+- The user is seemingly trapped by the interface, unable to escape
+- Elements behave unpredictably
+
+<img width="905" height="728" alt="image" src="https://github.com/user-attachments/assets/5ad15701-da81-422c-b940-ca7d0483ad03" />
+
+## Technologies Used
+- HTML5, CSS, JavaScript - Structure, interactivity and logic
+- Anime.js - Animations
+- Electron - Desktop App
+- Three.js - 3D Image Gallery
+
+## APIS Used
+- Nekos API : https://nekosapi.com
+
+## How to Run
+
+#### Web Version
+1. Open the project in a browser or via GitHub Pages
+
+#### Electron Version
+1. Install Node.js: https://nodejs.org
+2. Clone or download the repository
+3. Install the dependencies using VS Code terminal window:<br> type "npm install" and click ENTER
+4. Run the application: <br>Type "npm start" and click ENTER
+
+## Authors
+Aliyah and Lanna !! 

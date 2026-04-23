@@ -9,6 +9,12 @@ The project simulates a desktop where you're gradually overwhelmed with ads and 
 
 <img width="784" height="460" alt="image" src="https://github.com/user-attachments/assets/0c667d96-48b0-4b5f-a9b3-07210952ee1b" />
 
+## Cat Gallery Instructions
+- Smile at the cat portrait facing the camera (cats turn red when facing the camera) to add cat to your inventory
+- Act surprised to reset cat gallery
+- Access cat inventory by clicking the inventory button at the top right of the screen
+
+
 ## Features
 #### Fake Pop-up Ads
 - Randomly generated pop-ups appear across the screen
@@ -21,6 +27,7 @@ The project simulates a desktop where you're gradually overwhelmed with ads and 
 #### Control
 - The user is seemingly trapped by the interface, unable to escape
 - Elements behave unpredictably
+
 
 <img width="905" height="728" alt="image" src="https://github.com/user-attachments/assets/5ad15701-da81-422c-b940-ca7d0483ad03" />
 

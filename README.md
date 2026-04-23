@@ -39,6 +39,11 @@ The project simulates a desktop where you're gradually overwhelmed with ads and 
 
 ## APIS Used
 - Nekos API : https://nekosapi.com
+- Cat API : https://cataas.com/
+- Face API : https://github.com/justadudewhohacks/face-api.js
+
+## 3D Models Used
+- Surveillance camera: https://sketchfab.com/3d-models/mecanic-eye-805909c618624cb98091ab4f45393189
 
 ## How to Run
 
